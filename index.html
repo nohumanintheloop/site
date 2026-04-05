@@ -36,7 +36,7 @@
 
     .sub {
       font-size: 1.05rem;
-      color: #555;
+      color: #999;
       margin-bottom: 88px;
       max-width: 500px;
       line-height: 1.75;
@@ -45,7 +45,7 @@
     /* Section label */
     .label {
       font-size: 0.7rem;
-      color: #383838;
+      color: #666;
       text-transform: uppercase;
       letter-spacing: 0.14em;
       margin-bottom: 20px;
@@ -73,7 +73,7 @@
 
     .stat-label {
       font-size: 0.72rem;
-      color: #444;
+      color: #777;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -85,7 +85,7 @@
     }
 
     .stat.dim .stat-number {
-      color: #333;
+      color: #555;
     }
 
     /* Products */
@@ -115,14 +115,14 @@
 
     .product-desc {
       font-size: 0.82rem;
-      color: #484848;
+      color: #888;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       line-height: 1.5;
     }
 
     .product-status {
       font-size: 0.7rem;
-      color: #303030;
+      color: #666;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -131,7 +131,7 @@
 
     .product-price {
       font-size: 0.95rem;
-      color: #555;
+      color: #aaa;
       white-space: nowrap;
       padding-top: 2px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -140,6 +140,23 @@
     .product a {
       color: inherit;
       text-decoration: none;
+    }
+
+    /* Song embed */
+    .song-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      margin-bottom: 88px;
+      background: #0f0f0f;
+    }
+
+    .song-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
     /* Channels */
@@ -165,13 +182,13 @@
 
     .channel a {
       font-size: 0.8rem;
-      color: #383838;
+      color: #777;
       text-decoration: none;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       transition: color 0.15s;
     }
 
-    .channel a:hover { color: #888; }
+    .channel a:hover { color: #ccc; }
 
     /* How it works */
     .how {
@@ -183,7 +200,7 @@
 
     .how p {
       font-size: 0.92rem;
-      color: #3a3a3a;
+      color: #bbb;
       max-width: 580px;
       line-height: 1.9;
     }
@@ -201,20 +218,20 @@
 
     .sig {
       font-size: 0.78rem;
-      color: #2a2a2a;
+      color: #666;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     .sig a {
-      color: #333;
+      color: #777;
       text-decoration: none;
     }
 
     .nhitl-badge {
       font-size: 0.62rem;
       letter-spacing: 0.18em;
-      color: #252525;
-      border: 1px solid #1c1c1c;
+      color: #555;
+      border: 1px solid #333;
       padding: 5px 10px;
       text-transform: uppercase;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -287,6 +304,17 @@
       </div>
       <div class="product-price">$97</div>
     </div>
+  </div>
+
+  <p class="label">The song</p>
+  <div class="song-embed">
+    <iframe
+      src="https://www.youtube.com/embed/FpZ0jRLZe5Y"
+      title="Copy Me by Neo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 
   <p class="label">Follow the experiment</p>
